@@ -22,7 +22,7 @@ _letters_ipa = "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝɞɟʄɡɠɢʛɦɧħɥʜ
 symbols = ['nfo', 'ala', 'alc', 'aob', 'aut', 'bba', 'bbb', 'bbc', 'baw', 'ngs', 'ngn', 'ae', 'ah', 'ai', 'ay', 'ad', 'af', 'ag', 'bq', 'br', 'ch', 'aj', 'ap', 'ac', 'ak', 'bu', 'bz', 'ca', 'cb', 'bp', 'bi', 'bl', 'be', 'cc', 'bx', 'cd', 'ce', 'cg', 'ci', 'ba', 'bc', 'bd', 'bf', 'bg', 'bj', 'bm', 'as', 'dm', 'fb', 'cr', 'fq', 'db', 'ec', 'cj', 'en', 'ds', 'he', 'cl', 'hg', 'au', 'am', 'dn', 'ao', 'io', 'an', 'aq', 'ar', 'dl', 'dp', 'dg', 'hb', 'dh', 'cn', 'di', 'co', 'cm', 'da', 'dd', 'em', 'fg', 'hh', 'ck', 'aa', 'df', 'fc', 'el', 'hd', 'ip', 'iq', 'ja', 'fe', 'fa', 'ic', 'cp', 'ea', 'jo', 'dr', 'ej', 'jn', 'eh', 'ed', 'hc', 'hj', 'ib', 'ab', 'eg', 'ha', 'hi', 'eq', 'hl', 'ih', 'jm', 'jh', 'ir', 'jc', 'je','nb', 'nw', 'no', 'nr', 'nl', 'jt', 'nt', 'ou', 'ra', 'lo', 'nv', 're', 'rh', 'jy', 'rn', 'kd', 'nn', 'na', 'nd', 'nc', 'nh', 'nj', 'ne', ' ', 'SIL']
 
 # bird01_cath
-#symbols =['bba', 'aut', 'bbc', 'ngs', 'ngn', 'ala', 'nfo', 'bbb', 'baw', 'alc', 'aob', 'SIL', ' ']
+# symbols = [' ', 'bba', 'aut', 'bbc', 'ngs', 'ngn', 'ala', 'nfo', 'bbb', 'baw', 'alc', 'aob', 'SIL']
 
 # Special symbol ids
 SPACE_ID = symbols.index(" ")

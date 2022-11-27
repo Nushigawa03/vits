@@ -44,7 +44,7 @@ def main():
 
   n_gpus = torch.cuda.device_count()
   os.environ['MASTER_ADDR'] = 'localhost'
-  os.environ['MASTER_PORT'] = '80000'
+  os.environ['MASTER_PORT'] = '20000' #ここ
 
   hps = utils.get_hparams()
   print((n_gpus, hps,))
@@ -101,6 +101,7 @@ def run(rank, n_gpus, hps):
   net_g = DDP(net_g, device_ids=[rank],find_unused_parameters=True)
   net_d = DDP(net_d, device_ids=[rank],find_unused_parameters=True)
 
+  print("wakaran!")
   try:
     _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "G_*.pth"), net_g, optim_g)
     _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "D_*.pth"), net_d, optim_d)
@@ -114,6 +115,7 @@ def run(rank, n_gpus, hps):
 
   scaler = GradScaler(enabled=hps.train.fp16_run)
 
+  print("wakaran!")
   for epoch in range(epoch_str, hps.train.epochs + 1):
     if rank==0:
       train_and_evaluate(rank, epoch, hps, [net_g, net_d], [optim_g, optim_d], [scheduler_g, scheduler_d], scaler, [train_loader, eval_loader], logger, [writer, writer_eval])

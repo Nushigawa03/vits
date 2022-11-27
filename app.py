@@ -43,7 +43,7 @@ def get_binary_file_downloader_html(bin_file, file_label='File', extension=""):
     return href
 
 def get_text(text, hps):
-    text_norm = text_to_generalized_sequence(text, hps.data.text_cleaners)
+    text_norm = text_to_generalized_sequence(text, ['symbol_cleaners'])
     if hps.data.add_blank:
         text_norm = commons.intersperse(text_norm, 0)
     print(text_norm)
